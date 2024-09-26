@@ -1,3 +1,24 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+
+@media screen and (max-width:800px) {
+   nav ul{
+        left: -200%;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 4.6rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px) brightness(0.9); 
+        flex-direction: column;
+        gap: 2rem;
+        transition:  0.6s ease-in-out;
+        padding-left: 1rem;
+    }
+
+
+    #check:checked ~  ul{
+        left: 0;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -31,7 +31,7 @@
 
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- <script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -39,17 +39,40 @@
             clifford: '#da373d',
             'btn-color': '#ABEF5F',
             'light-btn': '#ABEF5F80',
+            'primary': '#F67023'
           }
         }
       }
     }
-  </script> -->
+  </script>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope bg-[#2B2D33]">
 
-<h1>Hello</h1>
+  <nav class="shadow-xl">
+      <div class="mx-auto">
+          <div class="flex justify-between py-5 items-center">
 
+                <div>
+                  <a class="text-white text-2xl pl-4 lg:pl-0 md:text-3xl font-bold" href="#"><span class="text-[#F67023]">S</span>mart Cod<span class="text-primary">ers</span></a>
+                </div>
+    
+                <input type="checkbox" class="hidden"  id="check">
+                <label for="check" class="md:hidden me-2">
+                  <i class="fa-solid fa-bars fa-2x text-white"></i>
+                </label>
+
+                <ul class="flex text-xl text-white">
+                  <li><a href="" class="p-3 text-primary">Home</a></li>
+                  <li><a href="" class="p-3 hover:text-primary">Products</a></li>
+                  <li><a href="" class="p-3 hover:text-primary">Blogs</a></li>
+                  <li><a href="" class="p-3 hover:text-primary">Portfolio</a></li>
+                  <li><a href="" class="p-3 hover:text-primary">Contact</a></li>
+                </ul>
+
+          </div>
+      </div>
+  </nav>
 
 
 
